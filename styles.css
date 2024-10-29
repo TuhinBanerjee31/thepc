@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: "Oxanium", sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.bg-black {
+    background-color: #111111;
+}
+
+.text-purple-500 {
+    color: #8b5cf6;
+}
+
+.bg-purple-500 {
+    background-color: #8b5cf6;
+}
+
+.bg-purple-600:hover {
+    background-color: #7c3aed;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
