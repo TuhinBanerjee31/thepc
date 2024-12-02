@@ -7,39 +7,77 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>PMI Certification</title>
   </head>
   <body>
     <div>
-      <nav class="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-4">
-        <div class="container mx-auto flex items-center justify-between">
-          <a href="#" class="text-xl font-semibold">PMI Certification</a>
-          <button
-            class="block md:hidden p-2 text-gray-300 focus:outline-none"
-            onclick="toggleNavbar()"
-          >
-            <span class="sr-only">Toggle navigation</span>
-          </button>
-          <div
-            class="hidden md:flex w-full md:w-auto justify-center"
-            id="navbarNav"
-          >
-            <ul
-              class="flex flex-col md:flex-row gap-4 mt-3 md:mt-0 text-center"
+      <nav class="bg-gradient-to-r from-gray-700 to-gray-800 border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >PMI Certification</span
             >
-              <li><a class="hover:text-gray-300" href="#about">About Us</a></li>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700"
+            >
               <li>
-                <a class="hover:text-gray-300" href="#pricing">Pricing</a>
+                <a
+                  href="/"
+                  class="block py-2 px-3 text-[#A855F7] rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
               </li>
-              <li><a class="hover:text-gray-300" href="#blog">Blog</a></li>
               <li>
-                <a class="hover:text-gray-300" href="#services">Services</a>
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#A855F7] md:p-0 dark:text-white md:dark:hover:text-[#A855F7] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#A855F7] md:p-0 dark:text-white md:dark:hover:text-[#A855F7] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
-          <!-- <button class="text-white border border-purple-500 px-4 py-2 rounded hover:bg-purple-500">Login</button> -->
         </div>
       </nav>
 
@@ -59,7 +97,7 @@
           class="text-white font-bold py-2 px-6 rounded-full mt-4 animate-pulse tracking-widest"
         >
           Scroll Down To Know More
-      </span>
+        </span>
         <div class="flex justify-center gap-10 mt-8 text-center">
           <div>
             <p class="text-3xl font-bold">15Yr+</p>
@@ -92,11 +130,15 @@
             >
               <tr>
                 <th scope="col" class="px-6 py-3">Courses</th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-red-400">
+                  Pro-Thoughts Price (INR)
+                </th>
+                <th scope="col" class="px-6 py-3 text-red-400">
+                  College Dunia Price (INR)
+                </th>
+                <th scope="col" class="px-6 py-3 text-green-400">
                   Naukri Learning Price (INR)
                 </th>
-                <th scope="col" class="px-6 py-3">College Dunia Price (INR)</th>
-                <th scope="col" class="px-6 py-3">Pro-Thoughts Price (INR)</th>
               </tr>
             </thead>
             <tbody>
@@ -109,9 +151,9 @@
                 >
                   ASME B31.3 Process Piping Code Certification
                 </th>
-                <td class="px-6 py-4">36000</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">84599</td>
+                <td class="px-6 py-4 text-red-400">84599</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">36000</td>
               </tr>
 
               <tr
@@ -123,9 +165,9 @@
                 >
                   AutoCAD Certified Professional
                 </th>
-                <td class="px-6 py-4">41060</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">89999</td>
+                <td class="px-6 py-4 text-red-400">89999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">41060</td>
               </tr>
 
               <tr
@@ -137,9 +179,9 @@
                 >
                   Certified Administrative Manager (CAM)
                 </th>
-                <td class="px-6 py-4">34800</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">85499</td>
+                <td class="px-6 py-4 text-red-400">85499</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">34800</td>
               </tr>
 
               <tr
@@ -151,9 +193,9 @@
                 >
                   Certified Administrative Professional (CAP)
                 </th>
-                <td class="px-6 py-4">33040</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">87499</td>
+                <td class="px-6 py-4 text-red-400">87499</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">33040</td>
               </tr>
 
               <tr
@@ -165,9 +207,9 @@
                 >
                   Certified Agile Developer (CAD)
                 </th>
-                <td class="px-6 py-4">48000</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">65999</td>
+                <td class="px-6 py-4 text-red-400">65999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">48000</td>
               </tr>
 
               <tr
@@ -179,9 +221,9 @@
                 >
                   Certified Compensation Professional (CCP)
                 </th>
-                <td class="px-6 py-4">41029</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">45999</td>
+                <td class="px-6 py-4 text-red-400">45999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">41029</td>
               </tr>
 
               <tr
@@ -193,9 +235,9 @@
                 >
                   Certified Construction Industry Financial Professional (CCIFP)
                 </th>
-                <td class="px-6 py-4">39888</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">48999</td>
+                <td class="px-6 py-4 text-red-400">48999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">39888</td>
               </tr>
 
               <tr
@@ -208,9 +250,9 @@
                   Certified Construction Manager & Professional (CCP) & (CCM)<br />+
                   Construction Documents Technologist (CDT)
                 </th>
-                <td class="px-6 py-4">41111</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">24999</td>
+                <td class="px-6 py-4 text-red-400">44999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">41111</td>
               </tr>
 
               <tr
@@ -222,9 +264,9 @@
                 >
                   Certified Cost Estimator and Analyst (CCEA)
                 </th>
-                <td class="px-6 py-4">36999</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">62899</td>
+                <td class="px-6 py-4 text-red-400">62899</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">36999</td>
               </tr>
 
               <tr
@@ -236,9 +278,9 @@
                 >
                   Certified Design Drafter (CDD)
                 </th>
-                <td class="px-6 py-4">49999</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">69999</td>
+                <td class="px-6 py-4 text-red-400">69999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">49999</td>
               </tr>
 
               <tr
@@ -251,9 +293,9 @@
                   Certified Development, Design & Construction Professional
                   (CDP)
                 </th>
-                <td class="px-6 py-4">37000</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">45999</td>
+                <td class="px-6 py-4 text-red-400">45999</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">37000</td>
               </tr>
 
               <tr
@@ -265,9 +307,9 @@
                 >
                   Certified Drafter (CD)
                 </th>
-                <td class="px-6 py-4">44000</td>
-                <td class="px-6 py-4">59999</td>
-                <td class="px-6 py-4">56899</td>
+                <td class="px-6 py-4 text-red-400">56899</td>
+                <td class="px-6 py-4 text-red-400">59999</td>
+                <td class="px-6 py-4 text-green-400">44000</td>
               </tr>
 
               <tr
@@ -280,9 +322,9 @@
                   Certified Estimating Professional (CPE)<br />+ Certified
                   Purchasing Professional (CPP)
                 </th>
-                <td class="px-6 py-4">49000</td>
-                <td class="px-6 py-4">69999</td>
-                <td class="px-6 py-4">45999</td>
+                <td class="px-6 py-4 text-red-400">55999</td>
+                <td class="px-6 py-4 text-red-400">69999</td>
+                <td class="px-6 py-4 text-green-400">49000</td>
               </tr>
 
               <tr
@@ -294,9 +336,9 @@
                 >
                   Certified Facility Manager (CFM)
                 </th>
-                <td class="px-6 py-4">38900</td>
-                <td class="px-6 py-4">69999</td>
-                <td class="px-6 py-4">56999</td>
+                <td class="px-6 py-4 text-red-400">56999</td>
+                <td class="px-6 py-4 text-red-400">69999</td>
+                <td class="px-6 py-4 text-green-400">38900</td>
               </tr>
 
               <tr
@@ -308,9 +350,9 @@
                 >
                   Certified in Financial Management Certification
                 </th>
-                <td class="px-6 py-4">45633</td>
-                <td class="px-6 py-4">78999</td>
-                <td class="px-6 py-4">52999</td>
+                <td class="px-6 py-4 text-red-400">52999</td>
+                <td class="px-6 py-4 text-red-400">78999</td>
+                <td class="px-6 py-4 text-green-400">45633</td>
               </tr>
 
               <tr class="bg-white dark:bg-gray-800">
@@ -321,9 +363,9 @@
                   Certified in Production and Inventory Management (CPIM)<br />+
                   Certified Supply Chain Professional (CSCP)
                 </th>
-                <td class="px-6 py-4">35999</td>
-                <td class="px-6 py-4">49999</td>
-                <td class="px-6 py-4">54999</td>
+                <td class="px-6 py-4 text-red-400">54999</td>
+                <td class="px-6 py-4 text-red-400">49999</td>
+                <td class="px-6 py-4 text-green-400">35999</td>
               </tr>
             </tbody>
           </table>
@@ -415,61 +457,57 @@
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal dark:text-white"
                 >
                   PMP Exam Application Fee
                 </th>
-                <td class="px-6 py-4">INR 41,000</td>
+                <td class="px-2 md:px-6 py-4">INR 41,000</td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal dark:text-white"
                 >
                   PMP Examination Fee
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   PMI Member Fee: INR 0<br />Non-PMI Member Fee: INR 42,863
                 </td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal dark:text-white"
                 >
                   Training and Preparation Cost for PMP
                 </th>
-                <td class="px-6 py-4">INR 8,000 to INR 18,000</td>
+                <td class="px-2 md:px-6 py-4">INR 8,000 to INR 18,000</td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal dark:text-white"
                 >
                   PMI Certification Re-examination Fee
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   PMI Member Fee: INR 19,000<br />Non-PMI Member Fee: INR 28,961
                 </td>
               </tr>
-
               <tr class="bg-white dark:bg-gray-800">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal dark:text-white"
                 >
                   PMP Renewal Fee
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   PMI Member Fee: INR 8,999<br />Non-PMI Member Fee: INR 11,585
                 </td>
               </tr>
@@ -550,52 +588,49 @@
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Scheduling and Time Management Skills
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Effective management of project timelines and schedules.
                 </td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Effective Communication Skills
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Clear and concise communication with team members and
                   stakeholders.
                 </td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Risk Management
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Identifying and mitigating project risks.
                 </td>
               </tr>
-
               <tr class="bg-white dark:bg-gray-800">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Problem Solving
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Ability to solve issues that arise during project execution.
                 </td>
               </tr>
@@ -637,81 +672,77 @@
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="w-24 px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Project Manager
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Project managers plan and allocate project resources, create
                   budgets, track progress, and keep stakeholders updated
                   throughout the process.
                 </td>
-                <td class="px-6 py-4">INR 14,80,888</td>
+                <td class="px-2 md:px-6 py-4">INR 14,80,888</td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Project Manager (IT)
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   The role of a project manager in the IT sector is to assume
                   responsibility for a specific project or several projects
                   within an organization.
                 </td>
-                <td class="px-6 py-4">INR 17,31,173</td>
+                <td class="px-2 md:px-6 py-4">INR 17,31,173</td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Vice President (IT)
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   The Vice President of IT will be in charge of the company's
                   information systems and processes, including computer,
                   communication, and office systems, as well as their planning,
                   development, implementation, maintenance, and security.
                 </td>
-                <td class="px-6 py-4">INR 35,76,446</td>
+                <td class="px-2 md:px-6 py-4">INR 35,76,446</td>
               </tr>
-
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Program Manager
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Program managers are in charge of ensuring that larger
                   organizational goals are met.
                 </td>
-                <td class="px-6 py-4">INR 23,47,997</td>
+                <td class="px-2 md:px-6 py-4">INR 23,47,997</td>
               </tr>
-
               <tr class="bg-white dark:bg-gray-800">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap dark:text-white"
                 >
                   Information Technology (IT) Director
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-2 md:px-6 py-4">
                   Overseeing all the technology operations and evaluating them
                   according to established goals.
                 </td>
-                <td class="px-6 py-4">INR 35,86,275</td>
+                <td class="px-2 md:px-6 py-4">INR 35,86,275</td>
               </tr>
             </tbody>
           </table>
@@ -986,15 +1017,12 @@
             class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
           >
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6"
+              <a href="policy.html" class="hover:underline me-4 md:me-6"
                 >Privacy Policy</a
               >
             </li>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Contact</a>
+              <a href="contact.html" class="hover:underline">Contact</a>
             </li>
           </ul>
         </div>
@@ -1007,5 +1035,7 @@
         >
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
